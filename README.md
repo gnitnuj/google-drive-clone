@@ -11,9 +11,6 @@ You can view the deployed application This is a [here](https://goog-drive-clone.
 
 ## Notes to self
 
-Just finished up connecting database, next steps:
-
-- [ ] Update schema to show files and folders
-- [ ] Manually insert examples
-- [ ] Render them in the UI
-- [ ] Push and make sure it all works
+- [x] Change folders to link components, remove all client state
+- [x] Clean up the database and data fetching patterns
+- [ ] Real homepage
