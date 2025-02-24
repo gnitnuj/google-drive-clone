@@ -12,7 +12,6 @@ You can view the deployed application This is a [here](https://goog-drive-clone.
 - [x] Add "ownership" to files and folders
 - [x] Upload files to the right folder
 - [x] Allow files that aren't images to be uploaded
-- [ ] Make sure sort order is consistent
+- [x] Make sure sort order is consistent
 - [ ] Add delete
 - [ ] Real homepage + onboarding
-- [ ] Make sure events are persisting as expected
