@@ -13,5 +13,11 @@ You can view the deployed application This is a [here](https://goog-drive-clone.
 - [x] Upload files to the right folder
 - [x] Allow files that aren't images to be uploaded
 - [x] Make sure sort order is consistent
-- [ ] Add delete
+- [x] Add delete
 - [ ] Real homepage + onboarding
+
+## Fun follow ups
+
+### Folder deletions
+
+Make sure you fetch all of the folders that have it as a parent, and their children too
