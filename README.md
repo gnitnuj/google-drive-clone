@@ -2,7 +2,7 @@
 
 You can view the deployed application This is a [here](https://goog-drive-clone.netlify.app/).
 
-## TODO
+## TODONE
 
 - [x] Set up database and data model
 - [x] Move folder open state to URL
@@ -16,7 +16,7 @@ You can view the deployed application This is a [here](https://goog-drive-clone.
 - [x] Add delete
 - [x] Real homepage + onboarding
 
-## Fun follow ups
+## Next Steps?
 
 ### Folder deletions
 
