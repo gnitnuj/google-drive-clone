@@ -6,7 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   title: "Google Drive Clone",
-  description: "Google Drive Clone",
+  description: "It's like Google Drive, but worse!",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
