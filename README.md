@@ -2,6 +2,15 @@
 
 You can view the deployed application This is a [here](https://goog-drive-clone.netlify.app/).
 
+## Technologies Used
+- Next.js
+- TypeScript
+- Tailwind CSS
+- PostHog (Analytics)
+- SingleStore (Database)
+- UploadThing (File Uploads)
+- Clerk (Authentication and User Management)
+
 ## TODONE
 
 - [x] Set up database and data model
