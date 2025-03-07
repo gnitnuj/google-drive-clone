@@ -1,17 +1,17 @@
 # Google Drive Clone
 
-You can view the deployed application [here](https://goog-drive-clone.netlify.app/).
+You can view the deployed application [here](https://goog-drive-clone.netlify.app/). * Forgive the cold start as everything is hosted on free tier
 
 ## Technologies Used
 - Next.js
 - TypeScript
-- Tailwind CSS
+- Shadcn
 - PostHog (Analytics)
 - SingleStore (Database)
 - UploadThing (File Uploads)
 - Clerk (Authentication and User Management)
 
-## TODONE
+## TODO
 
 - [x] Set up database and data model
 - [x] Move folder open state to URL
@@ -24,25 +24,10 @@ You can view the deployed application [here](https://goog-drive-clone.netlify.ap
 - [x] Make sure sort order is consistent
 - [x] Add delete
 - [x] Real homepage + onboarding
-
-## Next Steps?
-
-### Folder deletions
-
-Make sure you fetch all of the folders that have it as a parent, and their children too
-
-### Folder creations
-
-Make a server action that takes a name and parentId, and creates a folder with that name and parentId (don't forget to set the ownerId).
-
-### Access control
-
-Check if user is owner before showing the folder page.
-
-### Make a "file view" page
-
-You get the idea. Maybe check out my last tutorial?
-
-### Toasts!
-
-### Gray out a row while it's being deleted
+- [ ] Folder deletions
+- [ ] Folder creations
+- [ ] Access control
+- [ ] Toasts
+- [ ] Drag & Drop
+- [ ] Sharing
+- [ ] File Previews
