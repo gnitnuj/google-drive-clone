@@ -2,6 +2,8 @@
 
 You can view the deployed application [here](https://goog-drive-clone.netlify.app/). * Forgive the cold start as everything is hosted on free tier
 
+![Drive Demo](./drive-demo.gif)
+
 ## Technologies Used
 - Next.js
 - TypeScript
