@@ -2,7 +2,7 @@
 
 import { and, eq } from "drizzle-orm";
 import { db } from "./db";
-import { files_table } from "./db/schema";
+import { files_table, folders_table } from "./db/schema";
 import { auth } from "@clerk/nextjs/server";
 import { UTApi } from "uploadthing/server";
 import { cookies } from "next/headers";
@@ -43,4 +43,38 @@ export async function deleteFile(fileId: number) {
   c.set("force-refresh", JSON.stringify(Math.random()));
 
   return { success: true };
+}
+
+export async function createFolder(name: string, parentId: number) {
+  const session = await auth();
+  if (!session.userId) {
+    return { error: "Unauthorized" };
+  }
+
+  // Verify parent folder exists and belongs to user
+  const [parentFolder] = await db
+    .select()
+    .from(folders_table)
+    .where(
+      and(
+        eq(folders_table.id, parentId),
+        eq(folders_table.ownerId, session.userId),
+      ),
+    );
+
+  if (!parentFolder) {
+    return { error: "Parent folder not found" };
+  }
+
+  // Create the new folder
+  const result = await db.insert(folders_table).values({
+    name,
+    parent: parentId,
+    ownerId: session.userId,
+  });
+
+  const c = await cookies();
+  c.set("force-refresh", JSON.stringify(Math.random()));
+
+  return { success: true, folderId: result[0]?.id };
 }

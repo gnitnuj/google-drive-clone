@@ -8,6 +8,7 @@ import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { UploadButton } from "~/components/uploadthing";
 import { useRouter } from "next/navigation";
 import { usePostHog } from "posthog-js/react";
+import { CreateFolderButton } from "./create-folder-dialog";
 
 export default function DriveContents(props: {
   files: (typeof files_table.$inferSelect)[];
@@ -67,6 +68,9 @@ export default function DriveContents(props: {
             ))}
           </ul>
         </div>
+
+        <CreateFolderButton folderId={props.currentFolderId} />
+
         <UploadButton
           endpoint="driveUploader"
           onBeforeUploadBegin={(files) => {

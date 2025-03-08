@@ -24,8 +24,9 @@ You can view the deployed application [here](https://goog-drive-clone.netlify.ap
 - [x] Make sure sort order is consistent
 - [x] Add delete
 - [x] Real homepage + onboarding
+- [x] Folder creations
+- [ ] Rename files/folders
 - [ ] Folder deletions
-- [ ] Folder creations
 - [ ] Access control
 - [ ] Toasts
 - [ ] Drag & Drop
